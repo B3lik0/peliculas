@@ -1,7 +1,7 @@
-import MovieCard from "./Card";
-import { get } from "../data/API";
+import MovieCard from "../Card/Card";
+import { get } from "../../data/API";
 import { useEffect, useState } from "react";
-
+import "../Grid/Grid.css"
 export default function Grid() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
@@ -9,9 +9,8 @@ export default function Grid() {
       setMovies(data.results);
     });
   }, []);
-  console.log(movies)
   return (
-    <ul>
+    <ul className="container">
       {movies.map((movie) => (
         <MovieCard movie={movie} key={movie.id} />
       ))}
