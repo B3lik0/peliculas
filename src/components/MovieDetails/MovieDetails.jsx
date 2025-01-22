@@ -16,7 +16,7 @@ export default function MovieDetails() {
   const imgUrl = MoviePoster(movie?.poster_path)
   return (
     <>
-      <div className="container">
+      <div className="movieContainer">
         <div>
           <h1>{movie?.original_title}</h1>
           <h3>{movie?.tagline}</h3>

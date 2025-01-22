@@ -1,6 +1,8 @@
-.container{
+.movieContainer {
     display: flex;
-    align-items: center;
     justify-content: center;
-    max-width: 60%;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    /* Para que los elementos se ajusten a la línea siguiente */
 }

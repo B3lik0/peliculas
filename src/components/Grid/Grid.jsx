@@ -10,10 +10,11 @@ export default function Grid() {
     });
   }, []);
   return (
-    <ul className="container">
-      {movies.map((movie) => (
-        <MovieCard movie={movie} key={movie.id} />
-      ))}
-    </ul>
+    <div>
+      <ul className="container">
+        {movies.map((movie) => (
+          <MovieCard movie={movie} key={movie.id} />
+        ))}
+      </ul></div>
   );
 }
